@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -10,37 +11,44 @@
 </head>
 
 <body>
-  
+
   <div class="main-wrapper">
     <div class="input">
-      <input type="text"  id="result" readonly/>
+      <input type="text" id="result" readonly/>
     </div>
     <div class="buttons">
-      <button type="button" id="clear-all">AC</button>
-      <button type="button"   id="operator">+/-</button>
+      <button type="button" id="clear-all" onclick="cleam()">AC</button>
+      <button type="button" id="operator" onclick="deletr()">C</button>
       <button type="button" id="number">%</button>
-      <button type="button" id="operator" >÷</button>
-      <button type="button" id="number">7</button>
-      <button type="button" id="number">8</button>
-      <button type="button" id="number">9</button>
-      <button type="button" id="operator">×</button>
-            <button type="button" id="number">4</button>
-      <button type="button" id="number">5</button>
-      <button type="button" id="number">6</button>
-      <button type="button" id="operator">-</button>
-            <button type="button" id="number">1</button>
-      <button type="button" id="number">2</button>
-      <button type="button" id="number">3</button>
-      <button type="button" id="operator">+</button>
-            <button type="button" id="number">()</button>
-      <button type="button" id="number">0</button>
-      <button type="button" id="number">.</button>
-      <button type="button" id="equals">=</button>
+      <button type="button" id="operator" onclick="display('/')">÷</button>
+      <button type="button" id="number" onclick="display('7')">7</button>
+      <button type="button" id="number" onclick="display('8')">8</button>
+      <button type="button" id="number" onclick="display('9')">9</button>
+      <button type="button" id="operator" onclick="display('*')">×</button>
+      <button type="button" id="number" onclick="display('4')">4</button>
+      <button type="button" id="number" onclick="display('5')">5</button>
+      <button type="button" id="number" onclick="display('6')">6</button>
+      <button type="button" id="operator" onclick="display('-')">-</button>
+      <button type="button" id="number" onclick="display('1')">1</button>
+      <button type="button" id="number" onclick="display('2')">2</button>
+      <button type="button" id="number" onclick="display('3')">3</button>
+      <button type="button" id="operator" onclick="display('+')">+</button>
+      <button type="button" id="number" onclick="display('()')">()</button>
+      <button type="button" id="number" onclick="display('0')">0</button>
+      <button type="button" id="number" onclick="display('.')">.</button>
+      <button type="button" id="equals" onclick="finalresult()">=</button>
     </div>
-    
+
   </div>
-  
-  
-  
+
+
+
+
+
+  <script src="script.js"></script>
+
+
+
 </body>
+
 </html>
